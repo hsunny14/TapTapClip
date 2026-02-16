@@ -31,8 +31,8 @@
             width: 250px;
             height: 510px;
             margin: 0 auto;
-            border: 10px solid #1a1a1a;
-            border-radius: 38px;
+            border: 9px solid #1a1a1a;
+            border-radius: 36px;
             position: relative;
             background: #000;
             overflow: hidden;
@@ -167,7 +167,6 @@
 
             <!-- 기능 설명 섹션 (스크롤 연동) -->
             <section class="relative max-w-5xl mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row gap-12 items-start">
-                <!-- 왼쪽 텍스트 영역 -->
                 <div class="w-full md:w-1/2 space-y-24 md:space-y-48 pb-10">
                     <div class="feature-trigger section-text active" data-index="0">
                         <h2 class="text-2xl md:text-3xl font-bold mb-4 text-black" data-i18n="f1_title">직관적인 촬영</h2>
@@ -202,7 +201,6 @@
                     </div>
                 </div>
 
-                <!-- 오른쪽 고정 iPhone -->
                 <div class="w-full md:w-1/2 sticky top-32 md:h-[550px] flex items-center">
                     <div class="iphone-container">
                         <div id="sticky-screen" class="iphone-screen" style="background-image: url('https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/77/d4/ed/77d4ed31-d523-399f-8a3a-1478caebb6a8/_U1109_U1173_U110f_U1173_U1105_U1175_U11ab_U1109_U1163_U11ba_2_1284_U200a_U00d7_U200a2778.png/400x800bb.png');"></div>
@@ -223,53 +221,53 @@
 
         <!-- 개인정보 처리방침 뷰 (초기 숨김) -->
         <div id="privacy-view" class="px-6 pb-24">
-            <h1 class="text-3xl font-black mb-2">개인정보 처리방침</h1>
-            <p class="text-gray-400 text-sm mb-12">최종 수정일: 2026년 2월 16일</p>
+            <h1 class="text-3xl font-black mb-2" data-i18n="priv_title">개인정보 처리방침</h1>
+            <p class="text-gray-400 text-sm mb-12" data-i18n="priv_date">최종 수정일: 2026년 2월 16일</p>
             
             <div class="privacy-content space-y-8 text-gray-600 leading-relaxed text-sm md:text-base">
                 <section>
-                    <h2>1. 개인정보의 수집 및 이용</h2>
-                    <p>TapTapClip("본 앱")은 사용자의 개인정보를 직접 수집하거나 외부 서버로 전송하지 않습니다. 모든 작업은 사용자의 기기 내에서 로컬로 처리됩니다.</p>
+                    <h2 data-i18n="priv_s1_t">1. 개인정보의 수집 및 이용</h2>
+                    <p data-i18n="priv_s1_c">TapTapClip("본 앱")은 사용자의 개인정보를 직접 수집하거나 외부 서버로 전송하지 않습니다. 모든 작업은 사용자의 기기 내에서 로컬로 처리됩니다.</p>
                 </section>
                 
                 <section>
-                    <h2>2. 필수 권한 사용 안내</h2>
-                    <p>본 앱은 원활한 서비스 제공을 위해 다음의 권한을 요청하며, 이는 명시된 목적 외에 다른 용도로 활용되지 않습니다:</p>
+                    <h2 data-i18n="priv_s2_t">2. 필수 권한 사용 안내</h2>
+                    <p data-i18n="priv_s2_c">본 앱은 원활한 서비스 제공을 위해 다음의 권한을 요청하며, 이는 명시된 목적 외에 다른 용도로 활용되지 않습니다:</p>
                     <ul class="list-disc pl-5 mt-3 space-y-2">
-                        <li><strong>카메라 권한 (Camera):</strong> 동영상 촬영 및 실시간 필터 적용을 위해 사용됩니다.</li>
-                        <li><strong>사진 라이브러리 접근 (Photo Library):</strong> 촬영 및 편집이 완료된 동영상을 기기 앨범에 저장하기 위해 사용됩니다.</li>
-                        <li><strong>마이크 권한 (Microphone):</strong> 동영상 촬영 시 오디오 녹음을 위해 사용됩니다.</li>
+                        <li data-i18n="priv_s2_l1"><strong>카메라 권한:</strong> 동영상 촬영 및 실시간 필터 적용을 위해 사용됩니다.</li>
+                        <li data-i18n="priv_s2_l2"><strong>사진 라이브러리 접근:</strong> 촬영 및 편집이 완료된 동영상을 기기 앨범에 저장하기 위해 사용됩니다.</li>
+                        <li data-i18n="priv_s2_l3"><strong>마이크 권한:</strong> 동영상 촬영 시 오디오 녹음을 위해 사용됩니다.</li>
                     </ul>
                 </section>
                 
                 <section>
-                    <h2>3. 데이터 보관 및 파기</h2>
-                    <p>본 앱은 별도의 회원가입 절차가 없으며, 사용자의 데이터를 서버에 저장하지 않습니다. 모든 영상 데이터는 사용자의 기기 내 사진 라이브러리에 저장되며, 사용자가 직접 기기에서 삭제할 때까지 보관됩니다.</p>
+                    <h2 data-i18n="priv_s3_t">3. 데이터 보관 및 파기</h2>
+                    <p data-i18n="priv_s3_c">본 앱은 별도의 회원가입 절차가 없으며, 사용자의 데이터를 서버에 저장하지 않습니다. 모든 영상 데이터는 사용자의 기기 내 사진 라이브러리에 저장되며, 사용자가 직접 기기에서 삭제할 때까지 보관됩니다.</p>
                 </section>
                 
                 <section>
-                    <h2>4. 제3자 제공 및 위탁</h2>
-                    <p>본 앱은 사용자의 데이터를 제3자에게 제공하거나 개인정보 처리를 위탁하지 않습니다.</p>
+                    <h2 data-i18n="priv_s4_t">4. 제3자 제공 및 위탁</h2>
+                    <p data-i18n="priv_s4_c">본 앱은 사용자의 데이터를 제3자에게 제공하거나 개인정보 처리를 위탁하지 않습니다.</p>
                 </section>
                 
                 <section>
-                    <h2>5. 아동의 개인정보 보호</h2>
-                    <p>본 앱은 만 13세 미만 아동의 개인정보를 고의로 수집하거나 요청하지 않습니다.</p>
+                    <h2 data-i18n="priv_s5_t">5. 아동의 개인정보 보호</h2>
+                    <p data-i18n="priv_s5_c">본 앱은 만 13세 미만 아동의 개인정보를 고의로 수집하거나 요청하지 않습니다.</p>
                 </section>
                 
                 <section>
-                    <h2>6. 문의처</h2>
-                    <p>개인정보 처리방침 및 데이터 관리에 관한 문의는 아래 연락처로 보내주시기 바랍니다.</p>
-                    <p class="font-bold text-black mt-2">이메일: hsunny14@nate.com</p>
+                    <h2 data-i18n="priv_s6_t">6. 문의처</h2>
+                    <p data-i18n="priv_s6_c">개인정보 처리방침 및 데이터 관리에 관한 문의는 아래 연락처로 보내주시기 바랍니다.</p>
+                    <p class="font-bold text-black mt-2"><span data-i18n="priv_email">이메일</span>: hsunny14@nate.com</p>
                 </section>
             </div>
             
-            <button onclick="showView('home')" class="mt-16 px-10 py-4 bg-black text-white rounded-full font-bold text-sm transition-transform active:scale-95 shadow-lg">홈으로 돌아가기</button>
+            <button onclick="showView('home')" class="mt-16 px-10 py-4 bg-black text-white rounded-full font-bold text-sm transition-transform active:scale-95 shadow-lg" data-i18n="back_btn">홈으로 돌아가기</button>
         </div>
     </div>
 
     <script>
-        // --- 화면 전환 로직 ---
+        // --- 화면 전환 로직 (보안 오류 수정을 위해 히스토리 조작 제거) ---
         function showView(viewName) {
             const home = document.getElementById('home-view');
             const privacy = document.getElementById('privacy-view');
@@ -280,18 +278,32 @@
                 privacy.style.display = 'block';
                 navLangs.style.display = 'none'; // 개인정보 페이지에서는 언어 버튼 숨김
                 window.scrollTo(0, 0);
-                // URL 해시 업데이트 (앱스토어 주소용)
-                window.location.hash = 'privacy';
+                
+                // 앱스토어 링크용 해시는 그대로 유지하되, replaceState 오류 방지를 위해
+                // 명시적으로 location.hash 수정을 생략하거나 try-catch로 감쌉니다.
+                try {
+                    window.location.hash = 'privacy';
+                } catch(e) {
+                    console.warn("URL hash update restricted by origin.");
+                }
             } else {
                 home.style.display = 'block';
                 privacy.style.display = 'none';
                 navLangs.style.display = 'flex';
                 window.scrollTo(0, 0);
-                history.replaceState(null, null, ' ');
+                
+                try {
+                    // hash 초기화
+                    if(window.location.hash) {
+                        history.pushState("", document.title, window.location.pathname + window.location.search);
+                    }
+                } catch(e) {
+                    console.warn("History API restricted by origin.");
+                }
             }
         }
 
-        // 초기 로드 시 해시 체크
+        // 초기 로드 시 해시 체크 (외부에서 index.html#privacy로 접근할 때 대비)
         window.addEventListener('load', () => {
             if (window.location.hash === '#privacy') {
                 showView('privacy');
@@ -314,7 +326,26 @@
                 f4_sub: "완성된 영상은 앨범에 자동으로 저장되어<br>인스타그램, 틱톡, 유튜브 공유가 편리합니다.",
                 footer_title: "지금 바로 당신의 감각을 탭해보세요!",
                 footer_sub: "TapTapClip과 함께라면 모든 순간이 특별해집니다.",
-                privacy_link: "개인정보 처리방침"
+                privacy_link: "개인정보 처리방침",
+                priv_title: "개인정보 처리방침",
+                priv_date: "최종 수정일: 2026년 2월 16일",
+                priv_s1_t: "1. 개인정보의 수집 및 이용",
+                priv_s1_c: "TapTapClip(\"본 앱\")은 사용자의 개인정보를 직접 수집하거나 외부 서버로 전송하지 않습니다. 모든 작업은 사용자의 기기 내에서 로컬로 처리됩니다.",
+                priv_s2_t: "2. 필수 권한 사용 안내",
+                priv_s2_c: "본 앱은 원활한 서비스 제공을 위해 다음의 권한을 요청하며, 이는 명시된 목적 외에 다른 용도로 활용되지 않습니다:",
+                priv_s2_l1: "카메라 권한: 동영상 촬영 및 실시간 필터 적용을 위해 사용됩니다.",
+                priv_s2_l2: "사진 라이브러리 접근: 촬영 및 편집이 완료된 동영상을 기기 앨범에 저장하기 위해 사용됩니다.",
+                priv_s2_l3: "마이크 권한: 동영상 촬영 시 오디오 녹음을 위해 사용됩니다.",
+                priv_s3_t: "3. 데이터 보관 및 파기",
+                priv_s3_c: "본 앱은 별도의 회원가입 절차가 없으며, 사용자의 데이터를 서버에 저장하지 않습니다. 모든 영상 데이터는 사용자의 기기 내 사진 라이브러리에 저장되며, 사용자가 직접 기기에서 삭제할 때까지 보관됩니다.",
+                priv_s4_t: "4. 제3자 제공 및 위탁",
+                priv_s4_c: "본 앱은 사용자의 데이터를 제3자에게 제공하거나 개인정보 처리를 위탁하지 않습니다.",
+                priv_s5_t: "5. 아동의 개인정보 보호",
+                priv_s5_c: "본 앱은 만 13세 미만 아동의 개인정보를 고의로 수집하거나 요청하지 않습니다.",
+                priv_s6_t: "6. 문의처",
+                priv_s6_c: "개인정보 처리방침 및 데이터 관리에 관한 문의는 아래 연락처로 보내주시기 바랍니다.",
+                priv_email: "이메일",
+                back_btn: "홈으로 돌아가기"
             },
             en: {
                 hero_tag: "[ The moment you tap, your life becomes a movie ]",
@@ -330,71 +361,166 @@
                 f4_sub: "Videos save automatically to your album.<br>Fast sharing to Instagram, TikTok, and YouTube.",
                 footer_title: "Tap your creativity right now!",
                 footer_sub: "Every moment becomes special with TapTapClip.",
-                privacy_link: "Privacy Policy"
+                privacy_link: "Privacy Policy",
+                priv_title: "Privacy Policy",
+                priv_date: "Last Updated: February 16, 2026",
+                priv_s1_t: "1. Collection and Use of Personal Information",
+                priv_s1_c: "TapTapClip (\"the App\") does not directly collect or transmit user's personal information to external servers. All processes are handled locally within the user's device.",
+                priv_s2_t: "2. Required Permissions",
+                priv_s2_c: "The App requests the following permissions to provide smooth services, which will not be used for any other purposes:",
+                priv_s2_l1: "Camera: Used for video recording and real-time filter application.",
+                priv_s2_l2: "Photo Library: Used to save recorded and edited videos to the device album.",
+                priv_s2_l3: "Microphone: Used for audio recording during video capture.",
+                priv_s3_t: "3. Data Retention and Destruction",
+                priv_s3_c: "The App has no membership registration and does not store user data on servers. All video data is stored in the device's photo library and kept until deleted by the user.",
+                priv_s4_t: "4. Third-Party Provision and Entrustment",
+                priv_s4_c: "The App does not provide user data to third parties or entrust personal information processing to others.",
+                priv_s5_t: "5. Children's Privacy",
+                priv_s5_c: "The App does not knowingly collect or request personal information from children under the age of 13.",
+                priv_s6_t: "6. Contact",
+                priv_s6_c: "Please send inquiries regarding the privacy policy and data management to the contact information below.",
+                priv_email: "Email",
+                back_btn: "Back to Home"
             },
             zh: {
                 hero_tag: "[ 点击的瞬间，您的日常生活将成为电影 ]",
                 hero_title: "无需复杂编辑，<br>只需拍摄即可完成短视频",
-                hero_sub: "只需拍摄即可完成感性视频.搜集您想要的场景,打造一个美妙的故事.",
+                hero_sub: "TapTapClip 是一款只需拍摄即可完成感性视频的相机应用。搜集您想要的场景，打造一个美妙的故事。",
                 f1_title: "直观拍摄",
-                f1_sub: "点击录制,松开暂停!通过'点击并按住'的方式轻松制作.",
+                f1_sub: "点击录制,松开暂停!通过'点击并按住'的方式，任何人都能轻松制作有节奏感的视频。",
                 f2_title: "片段搜集",
-                f2_sub: "美食、旅行、Vlog... 将分开拍摄的瞬间自然连接.",
-                f3_title: "实时预览",
-                f3_sub: "立即查看已拍摄内容.如果不满意,可以轻松删除重新拍摄.",
-                f4_title: "轻松分享",
-                f4_sub: "视频会自动保存到相册.快速分享至 Instagram 和 TikTok.",
+                f2_sub: "美食、旅行、Vlog... 将分开拍摄的瞬间自然连接，成为一个感性的故事。",
+                f3_title: "实时预览与删除",
+                f3_sub: "立即查看已拍摄内容.如果不满意,可以轻松删除最后一节并重新拍摄。",
+                f4_title: "轻松保存与分享",
+                f4_sub: "视频会自动保存到相册.快速分享至 Instagram 和 TikTok。",
                 footer_title: "立即通过 TapTapClip 点击您的灵感!",
-                footer_sub: "只要有 TapTapClip,每一个瞬间都变得特别.",
-                privacy_link: "隐私政策"
+                footer_sub: "只要有 TapTapClip,每一个瞬间都变得特别。",
+                privacy_link: "隐私政策",
+                priv_title: "隐私政策",
+                priv_date: "最后更新日期: 2026年2월16日",
+                priv_s1_t: "1. 个人信息的收集与使用",
+                priv_s1_c: "TapTapClip（“本应用”）不会直接收集或向外部服务器传输用户的个人信息。所有操作均在用户设备本地处理。",
+                priv_s2_t: "2. 必要权限使用说明",
+                priv_s2_c: "为了提供顺畅的服务，本应用请求以下权限，这些权限不会用于规定目的以外的其他用途：",
+                priv_s2_l1: "相机权限：用于录制视频和应用实时滤镜。",
+                priv_s2_l2: "相册访问权限：用于将录制和编辑完成的视频保存到设备相册中。",
+                priv_s2_l3: "麦克风权限：用于录制视频时的音频采集。",
+                priv_s3_t: "3. 数据保管与销毁",
+                priv_s3_c: "本应用没有单独的注册流程，也不会在服务器上存储用户数据。所有视频数据均存储在用户的设备相册中，直到用户自行删除。",
+                priv_s4_t: "4. 第三方提供与委托",
+                priv_s4_c: "本应用不会将用户数据提供给第三方，也不会委托他人处理个人信息。",
+                priv_s5_t: "5. 未成年人个人信息保护",
+                priv_s5_c: "本应用不会故意收集或索取 13 岁以下未成年人的个人信息。",
+                priv_s6_t: "6. 联系方式",
+                priv_s6_c: "有关隐私政策和数据管理的咨询，请发送至以下联系方式。",
+                priv_email: "电子邮件",
+                back_btn: "返回首页"
             },
             ja: {
                 hero_tag: "[ タップする瞬間、あなたの日常が映画になります ]",
                 hero_title: "複雑な編集なし、<br>撮影だけで完成するショートフォーム",
-                hero_sub: "撮影するだけで感覚的な映像を完成させます.好きなシーンだけを集めて物語を作ってみてください.",
-                f1_title: "直感的な撮影",
-                f1_sub: "タップで録画、離せば一時停止！誰でも簡単に作ることができます。",
-                f2_title: "クリップを撮る",
-                f2_sub: "グルメ、旅行、Vlog... 撮った瞬間が自然につながり、ストーリーになります。",
-                f3_title: "リアルタイム確認",
-                f3_sub: "撮った分をすぐに確認.気に入らなければ最後だけ消して撮り直せます.",
-                f4_title: "簡単な共有",
-                f4_sub: "動画は自動保存。InstagramやTikTokへの共有が最速です。",
+                hero_sub: "TapTapClipは撮影するだけで感覚的な映像を完成させるカメラアプリです。好きなシーンだけを集めて、一つの素敵な物語を作ってみてください。",
+                f1_title: "直感적인 撮影",
+                f1_sub: "タップで録画、離せば一時停止！「タップ＆ホールド」方式でリズム感のある映像を誰でも簡単に作ることができます。",
+                f2_title: "クリップを集めて撮る",
+                f2_sub: "グルメ、旅行、Vlog... 別々に撮った瞬間が自然につながり、一つのスタイリッシュなストーリーになります。",
+                f3_title: "リアルタイム確認と削除",
+                f3_sub: "撮った分をすぐに確認.気に入らなければ、最後のクリップだけを簡単に消して撮り直すことができます。",
+                f4_title: "簡単な保存と共有",
+                f4_sub: "完成した動画はアルバムに自動保存されます。Instagram、TikTok、YouTubeへあなたの日常を最速で共有しましょう。",
                 footer_title: "今すぐあなたの感覚をタップしてみてください！",
-                footer_sub: "TapTapClipと一緒なら、すべての瞬間が特別になります。",
-                privacy_link: "プライバシーポリシー"
+                footer_sub: "TapTapClipと一緒に、すべての瞬間が特別になります。",
+                privacy_link: "プライバシーポリシー",
+                priv_title: "プライバシーポリシー",
+                priv_date: "最終更新日: 2026年2월16日",
+                priv_s1_t: "1. 個人情報の収集と利用",
+                priv_s1_c: "TapTapClip（「本アプリ」）は、ユーザーの個人情報を直接収集したり、外部サーバーに送信したりすることはありません。すべての操作はユーザーのデバイス内でローカルに処理されます。",
+                priv_s2_t: "2. 必須権限の使用案内",
+                priv_s2_c: "本アプリは、円滑なサービス提供のために以下の権限を要求します。これらは明示された目的以外には使用されません。",
+                priv_s2_l1: "カメラ権限：動画撮影およびリアルタイムフィルターの適用のために使用されます。",
+                priv_s2_l2: "写真ライブラリへのアクセス：撮影および編集が完了した動画をデバイスのアルバムに保存するために使用されます。",
+                priv_s2_l3: "マイク権限：動画撮影時の音声録音のために使用されます。",
+                priv_s3_t: "3. データの保管と破棄",
+                priv_s3_c: "本アプリには別途の会員登録手続きはなく、ユーザーのデータをサーバーに保存することはありません。すべての動画データはユーザーのデバイスの写真ライブラリに保存され、ユーザーが直接削除するまで保管されます。",
+                priv_s4_t: "4. 第三者提供および委託",
+                priv_s4_c: "本アプリは、ユーザーのデータを第三者に提供したり、個人情報の処理を委託したりすることはありません。",
+                priv_s5_t: "5. 児童の個人情報保護",
+                priv_s5_c: "本アプリは、13歳未満の児童から故意に個人情報を収集したり、要求したりすることはありません。",
+                priv_s6_t: "6. お問い合わせ",
+                priv_s6_c: "プライバシーポリシーおよびデータ管理に関するお問い合わせは、以下の連絡先までお送りください。",
+                priv_email: "メール",
+                back_btn: "ホームに戻る"
             },
             es: {
                 hero_tag: "[ Al tocar, tu vida se convierte en película ]",
-                hero_title: "Crea videos cortos<br>solo con filmar",
-                hero_sub: "Completa videos con estilo sin ediciones complejas. Reúne las escenas que quieras.",
+                hero_title: "Crea videos cortos pro<br>solo con filmar",
+                hero_sub: "TapTapClip completa videos con estilo sin ediciones complejas. Reúne las escenas que quieras y crea una historia hermosa.",
                 f1_title: "Grabación Intuitiva",
-                f1_sub: "¡Toca para grabar, suelta para pausar! Crea videos rítmicos fácilmente.",
-                f2_title: "Reúne Momentos",
-                f2_sub: "Comida, viajes, vlogs... Une momentos en una historia con estilo.",
-                f3_title: "Revisión Real",
-                f3_sub: "Revisa tu progreso al instante. Borra el último clip y vuelve a grabarlo.",
-                f4_title: "Comparte Fácil",
-                f4_sub: "Videos guardados automáticamente. Comparte rápido en Instagram y TikTok.",
+                f1_sub: "¡Toca para grabar, suelta para pausar! Crea videos rítmicos fácilmente con nuestro método de 'Tocar y Mantener'.",
+                f2_title: "Reúne tus Momentos",
+                f2_sub: "Comida, viajes, vlogs... Momentos capturados en diferentes tiempos fluyen naturalmente en una historia con estilo.",
+                f3_title: "Revisión y Borrado Real",
+                f3_sub: "Revisa tu progreso al instante. Si no te gusta, puedes borrar fácilmente solo el último clip y volver a grabarlo.",
+                f4_title: "Guarda y Comparte Fácil",
+                f4_sub: "Los videos terminados se guardan automáticamente. Comparte tu vida de la forma más rápida en Instagram, TikTok y YouTube.",
                 footer_title: "¡Toca tu creatividad ahora mismo!",
                 footer_sub: "Cada momento se vuelve especial con TapTapClip.",
-                privacy_link: "Política de privacidad"
+                privacy_link: "Política de privacidad",
+                priv_title: "Política de privacidad",
+                priv_date: "Última actualización: 16 de febrero de 2026",
+                priv_s1_t: "1. Recopilación y uso de información personal",
+                priv_s1_c: "TapTapClip (\"la Aplicación\") no recopila ni transmite directamente la información personal del usuario a servidores externos. Todas las operaciones se procesan localmente en el dispositivo del usuario.",
+                priv_s2_t: "2. Guía de permisos requeridos",
+                priv_s2_c: "La Aplicación solicita los siguientes permisos para la prestación fluida del servicio, los cuales no se utilizarán para fines distintos a los especificados:",
+                priv_s2_l1: "Cámara: Se utiliza para la grabación de vídeo y la aplicación de filtros en tiempo real.",
+                priv_s2_l2: "Acceso a la biblioteca de fotos: Se utiliza para guardar los vídeos grabados y editados en el álbum del dispositivo.",
+                priv_s2_l3: "Micrófono: Se utiliza para la grabación de audio durante la captura de vídeo.",
+                priv_s3_t: "3. Retención y eliminación de datos",
+                priv_s3_c: "La Aplicación no tiene un proceso de registro de membresía por separado y no almacena datos de usuario en servidores. Todos los datos de vídeo se conservan hasta que el usuario los elimine.",
+                priv_s4_t: "4. Provisión y encargo a terceros",
+                priv_s4_c: "La Aplicación no proporciona datos de usuario a terceros ni encarga el procesamiento de información personal.",
+                priv_s5_t: "5. Protección de información de menores",
+                priv_s5_c: "La Aplicación no recopila ni solicita intencionadamente información personal de niños menores de 13 años.",
+                priv_s6_t: "6. Contacto",
+                priv_s6_c: "Envíe sus consultas sobre la política de privacidad y la gestión de datos a la siguiente dirección de correo electrónico.",
+                priv_email: "Correo electrónico",
+                back_btn: "Volver al inicio"
             },
             fr: {
                 hero_tag: "[ Dès que vous tapez, votre vie devient un film ]",
                 hero_title: "Créez des vidéos pro<br>juste en filmant",
-                hero_sub: "Créez des vidéos stylées sans montage complexe. Rassemblez les scènes de votre choix.",
+                hero_sub: "TapTapClip crée des vidéos stylées sans montage complexe. Rassemblez les scènes de votre choix et créez une belle histoire.",
                 f1_title: "Filmer Intuitivement",
-                f1_sub: "Appuyez pour filmer, relâchez pour mettre en pause ! Rythmez vos vidéos.",
-                f2_title: "Moments Choisis",
-                f2_sub: "Cuisine, voyages, vlogs... Les moments s'enchaînent naturellement.",
-                f3_title: "Aperçu Direct",
-                f3_sub: "Vérifiez votre progression. Supprimez le dernier clip et recommencez.",
+                f1_sub: "Appuyez pour filmer, relâchez pour mettre en pause ! Créez facilement des vidéos rythmées avec notre méthode 'Appuyer et Maintenir'.",
+                f2_title: "Rassemblez vos Moments",
+                f2_sub: "Cuisine, voyages, vlogs... Les moments capturés à différents instants s'enchaînent naturellement dans une histoire stylée.",
+                f3_title: "Aperçu et Suppression",
+                f3_sub: "Vérifiez votre progression instantanément. Si vous n'aimez pas, supprimez facilement le dernier clip et recommencez.",
                 f4_title: "Partage Rapide",
-                f4_sub: "Vidéos enregistrées auto. Partagez sur Instagram, TikTok et YouTube.",
+                f4_sub: "Les vidéos terminées sont enregistrées automatiquement. Partagez votre vie le plus rapidement sur Instagram, TikTok et YouTube.",
                 footer_title: "Tapez votre créativité dès maintenant !",
                 footer_sub: "Chaque instant devient spécial avec TapTapClip.",
-                privacy_link: "Politique de confidentialité"
+                privacy_link: "Politique de confidentialité",
+                priv_title: "Politique de confidentialité",
+                priv_date: "Dernière mise à jour : 16 février 2026",
+                priv_s1_t: "1. Collecte et utilisation des données personnelles",
+                priv_s1_c: "TapTapClip (\"l'Application\") ne collecte pas et ne transmet pas directement les données personnelles de l'utilisateur vers des serveurs externes. Toutes les opérations sont traitées localement sur l'appareil de l'utilisateur.",
+                priv_s2_t: "2. Guide des autorisations requises",
+                priv_s2_c: "L'Application demande les autorisations suivantes pour assurer le bon fonctionnement du service, et celles-ci ne seront pas utilisées à d'autres fins que celles spécifiées :",
+                priv_s2_l1: "Caméra : Utilisée pour l'enregistrement vidéo et l'application de filtres en temps réel.",
+                priv_s2_l2: "Accès à la bibliothèque de photos : Utilisé pour enregistrer les vidéos filmées et montées dans l'album de l'appareil.",
+                priv_s2_l3: "Microphone : Utilisé pour l'enregistrement audio lors de la capture vidéo.",
+                priv_s3_t: "3. Conservation et suppression des données",
+                priv_s3_c: "L'Application ne dispose pas de processus d'inscription séparé et ne stocke pas les données utilisateur sur des serveurs. Toutes les données sont conservées jusqu'à ce que l'utilisateur les supprime.",
+                priv_s4_t: "4. Communication à des tiers",
+                priv_s4_c: "L'Application ne fournit pas de données utilisateur à des tiers et ne confie pas le traitement des informations personnelles à des prestataires.",
+                priv_s5_t: "5. Protection des données des mineurs",
+                priv_s5_c: "L'Application ne collecte pas et ne sollicite pas sciemment de données personnelles auprès d'enfants de moins de 13 ans.",
+                priv_s6_t: "6. Contact",
+                priv_s6_c: "Veuillez envoyer vos demandes concernant la politique de confidentialité aux coordonnées ci-dessous.",
+                priv_email: "E-mail",
+                back_btn: "Retour à l'accueil"
             }
         };
 
